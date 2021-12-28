@@ -178,14 +178,14 @@ vendor/bin/ecs check src
 
 ```bash
 (cd tests/Application && APP_ENV=test bin/console sylius:fixtures:load)
-(cd tests/Application && APP_ENV=test bin/console server:run -d public)
+(cd tests/Application && APP_ENV=test symfony server:start -d --dir=public)
 ```
 
 - Using `dev` environment:
 
 ```bash
 (cd tests/Application && APP_ENV=dev bin/console sylius:fixtures:load)
-(cd tests/Application && APP_ENV=dev bin/console server:run -d public)
+(cd tests/Application && APP_ENV=dev symfony server:start -d --dir=public)
 ```
 
 ## License
